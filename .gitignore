@@ -1,0 +1,9 @@
+*~
+#*#
+*
+!/init.el
+!/.emacs.el.d/*
+/.emacs.el.d/*~
+/.emacs.el.d/#*#
+!/.emacs.el.d
+!.gitignore
