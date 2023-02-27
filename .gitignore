@@ -2,8 +2,8 @@
 #*#
 *
 !/init.el
-!/.emacs.el.d/*
-/.emacs.el.d/*~
-/.emacs.el.d/#*#
-!/.emacs.el.d
+!/config/*
+/config/*~
+/config/#*#
+!/config
 !.gitignore

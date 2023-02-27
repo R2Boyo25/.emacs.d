@@ -5,23 +5,26 @@
 ;;;; Primary init file: Load config files.
 ;;;;
 
+(setq emacsdir user-emacs-directory)
+(setq initdir (concat emacsdir "/config/"))
+
 ;; Tell customize where to store its config.
-(setq custom-file (concat user-emacs-directory ".emacs.el.d/" "customize.el"))
+(setq custom-file (concat initdir "customize.el"))
 
 ;; Add my custom require location for installing packages to
-(add-to-list 'load-path "~/.emacs.d/elisp/")
+(add-to-list 'load-path (concat emacsdir "elisp/"))
 
 ;;;
 ;;; Load files in ~/.emacs.d/.emacs.el.d
 ;;;
 
 (dolist
-    (fname (directory-files "~/.emacs.d/.emacs.el.d"))
+    (fname (directory-files initdir))
   (if
       (not (or
-            (file-directory-p (concat "~/.emacs.d/.emacs.el.d/" fname))
-            (s-contains-p "~" fname)))
-      (load-file (concat "~/.emacs.d/.emacs.el.d/" fname))))
+            (file-directory-p (concat initdir fname))
+            (string-match-p (regexp-quote "~") fname)))
+      (load-file (concat initdir fname))))
 
 ;;;
 ;;; Initialize package manager
@@ -31,3 +34,5 @@
 (package-initialize)
 
 ;; adobe helvetica is an okay font.
+
+(message "Custom configuration has been loaded! :)")

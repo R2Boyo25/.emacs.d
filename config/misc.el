@@ -20,3 +20,6 @@
 
 ;; Guile load path for my user
 (setenv "GUILE_LOAD_PATH" "~/.local/share/guile/")
+
+;; Parenthesis. Please.
+(show-paren-mode 1)

@@ -22,5 +22,5 @@ Exempt major modes are defined in `display-line-numbers-exempt-modes'."
 ;; Enable line numbers
 (when (version<= "26.0.50" emacs-version )
   ;; Make line numbers relative
-  (setq display-line-numbers-type 'relative)
+  ;(setq display-line-numbers-type 'relative)
   (global-display-line-numbers-mode))

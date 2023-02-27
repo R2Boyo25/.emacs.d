@@ -16,7 +16,7 @@
     ((t
       (:inherit nil :stipple nil :background "#ffffb1" :foreground "#141312" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 173 :width normal :foundry "monotype" :family "Iosevka Term Regular"))))
  '(package-selected-packages
-   '(mmm-mode multiple-cursors compat magit drag-stuff gited yaml lsp-mode rust-mode exwm))
+   '(eglot mmm-mode multiple-cursors compat magit drag-stuff gited yaml lsp-mode rust-mode exwm))
  '(size-indication-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
