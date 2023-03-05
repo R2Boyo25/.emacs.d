@@ -2,8 +2,10 @@
 #*#
 *
 !/init.el
+
 !/config/*
 /config/*~
 /config/#*#
 !/config
+
 !.gitignore
