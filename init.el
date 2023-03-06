@@ -5,6 +5,9 @@
 ;;;; Primary init file: Load config files.
 ;;;;
 
+;; Disable BIOS beeping
+(add-to-list 'after-make-frame-functions (lambda (_) (shell-command "xset b off")))
+
 (setq emacsdir user-emacs-directory)
 (setq initdir (concat emacsdir "/config/"))
 

@@ -12,6 +12,7 @@
 ;; Set the initial workspace number.
 (unless (get 'exwm-workspace-number 'saved-value)
   (setq exwm-workspace-number 4))
+
 ;; Make class name the buffer name
 (add-hook 'exwm-update-class-hook
           (lambda ()
@@ -27,6 +28,8 @@
           ([?\s-r] . exwm-reset)
           ;; 's-w': Switch workspace.
           ([?\s-w] . exwm-workspace-switch)
+          ;; 's-q': Move window.
+          ([?\s-q] . exwm-workspace-move-window)
           ;; 's-&': Launch application.
           ([?\s-&] . (lambda (command)
                        (interactive (list (read-shell-command "$ ")))
@@ -54,15 +57,15 @@
           ([?\C-d] . [delete])
           ([?\C-k] . [S-end delete]))))
 
-;(exwm-input-set-key (kbd "<S-f1>") 'cycle-buffer-backward)
-;(exwm-input-set-key (kbd "<S-f2>") 'cycle-buffer)
-
 ;; Enable EXWM
 (exwm-enable)
 ;; Configure Ido
 (exwm-config-ido)
 ;; Other configurations
 (exwm-config-misc)
+
+(require 'exwm-systemtray)
+(exwm-systemtray-enable)
 
 ;; Workspace mapping for multiple monitors.
 (setq exwm-randr-workspace-output-plist '(0 "VGA1"))
