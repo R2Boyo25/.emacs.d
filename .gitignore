@@ -5,7 +5,10 @@
 
 !/config/*
 /config/*~
-/config/#*#
 !/config
+
+!/modules/*
+/modules/*~
+!/modules
 
 !.gitignore

@@ -23,6 +23,7 @@
 
 ;; Add my custom require location for installing packages to
 (add-to-list 'load-path (concat emacsdir "elisp/"))
+(add-to-list 'load-path (concat emacsdir "modules/"))
 
 ;;;
 ;;; Load files in ~/.emacs.d/.emacs.el.d
