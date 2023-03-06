@@ -1,5 +1,5 @@
 ;;;;
-;;;; .emacs
+;;;; init.el
 ;;;;  by KazaniAvali (2023)
 ;;;;
 ;;;; Primary init file: Load config files.
@@ -10,6 +10,16 @@
 
 ;; Tell customize where to store its config.
 (setq custom-file (concat initdir "customize.el"))
+
+;;;
+;;; Initialize package manager
+;;;
+
+(package-initialize)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+;(load-file (concat initdir "customize.el"))
+;(package-refresh-contents)
+;(package-install-selected-packages)
 
 ;; Add my custom require location for installing packages to
 (add-to-list 'load-path (concat emacsdir "elisp/"))
@@ -25,13 +35,6 @@
             (file-directory-p (concat initdir fname))
             (string-match-p (regexp-quote "~") fname)))
       (load-file (concat initdir fname))))
-
-;;;
-;;; Initialize package manager
-;;;
-
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-(package-initialize)
 
 ;; adobe helvetica is an okay font.
 

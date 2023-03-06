@@ -11,14 +11,16 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
- '(custom-enabled-themes '(doom-ayu-dark))
+ '(custom-enabled-themes (quote (doom-ayu-dark)))
  '(custom-safe-themes
-   '("631c52620e2953e744f2b56d102eae503017047fb43d65ce028e88ef5846ea3b" default))
+   (quote
+    ("631c52620e2953e744f2b56d102eae503017047fb43d65ce028e88ef5846ea3b" default)))
  '(default
     ((t
       (:inherit nil :stipple nil :background "#ffffb1" :foreground "#141312" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 173 :width normal :foundry "monotype" :family "Iosevka Term Regular"))))
  '(package-selected-packages
-   '(org-journal doom-themes eglot mmm-mode multiple-cursors compat magit drag-stuff gited yaml lsp-mode rust-mode exwm))
+   (quote
+    (gdscript-mode org-journal doom-themes eglot mmm-mode multiple-cursors compat magit drag-stuff gited yaml lsp-mode rust-mode exwm)))
  '(size-indication-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
