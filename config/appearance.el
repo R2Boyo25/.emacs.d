@@ -16,3 +16,7 @@
 
 (set-frame-parameter (selected-frame) 'alpha '(93 93))
 (add-to-list 'default-frame-alist '(alpha 93 93))
+
+;; Display time in mode-line
+(setq display-time-string-forms '((concat " " 24-hours ":" minutes " ")))
+(display-time-mode t)
