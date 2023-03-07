@@ -1,7 +1,8 @@
 *~
-#*#
 *
+
 !/init.el
+!/.xprofile.example
 
 !/config/*
 /config/*~
