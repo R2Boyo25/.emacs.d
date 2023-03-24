@@ -69,7 +69,7 @@
 
 ;; Workspace mapping for multiple monitors.
 (setq exwm-randr-workspace-output-plist '(0 "VGA1"))
-(setq exwm-randr-workspace-monitor-plist '(2 "HDMI-A-0" 3 "HDMI-A-0"))
+(setq exwm-randr-workspace-monitor-plist '(7 "HDMI-A-0" 8 "HDMI-A-0" 9 "HDMI-A-0"))
 (exwm-randr-enable)
 
 ;; Move mouse when switching workspaces.
@@ -80,3 +80,14 @@
 ;; char mode by default.
 (setq exwm-manage-configurations '((t char-mode t)))
 
+
+;;;
+;;; Picom config
+;;;
+
+(defun exwm/run-picom ()
+  (interactive)
+  (when (executable-find "picom")
+    (start-process "picom" " *picom*" "picom" "--vsync" "--backend=glx" "--blur-background" "-r 300" "--detect-client-opacity")))
+
+(add-hook 'exwm-init-hook #'exwm/run-picom)

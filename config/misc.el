@@ -23,3 +23,5 @@
 
 ;; Parenthesis. Please.
 (show-paren-mode 1)
+
+(add-to-list 'auto-mode-alist '("\\.mjs\\'" . js-mode))
