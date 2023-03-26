@@ -5,6 +5,9 @@
 ;;;; Generic configuration that doesn't warrant a separate file.
 ;;;;
 
+;;; Company mode
+(add-hook 'after-init-hook 'global-company-mode)
+
 ;; Disable annoying lockfiles which break on SSHFS & Samba.
 (setq create-lockfiles nil)
 

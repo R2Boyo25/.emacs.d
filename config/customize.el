@@ -21,7 +21,7 @@
  '(display-time-interval 30)
  '(display-time-mode t)
  '(package-selected-packages
-   '(powerline typescript-mode gdscript-mode org-journal doom-themes eglot mmm-mode multiple-cursors compat magit drag-stuff gited yaml lsp-mode rust-mode exwm))
+   '(company powerline typescript-mode gdscript-mode org-journal doom-themes eglot mmm-mode multiple-cursors compat magit drag-stuff gited yaml lsp-mode rust-mode exwm))
  '(size-indication-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
