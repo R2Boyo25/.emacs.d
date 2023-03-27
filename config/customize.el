@@ -20,10 +20,11 @@
  '(display-time-24hr-format t)
  '(display-time-interval 30)
  '(display-time-mode t)
+ '(ispell-dictionary nil)
  '(mml-secure-openpgp-encrypt-to-self t)
  '(mml-secure-openpgp-sign-with-sender t)
  '(package-selected-packages
-   '(company powerline typescript-mode gdscript-mode org-journal doom-themes eglot mmm-mode multiple-cursors compat magit drag-stuff gited yaml lsp-mode rust-mode exwm))
+   '(emmet-mode company powerline typescript-mode gdscript-mode org-journal doom-themes eglot mmm-mode multiple-cursors compat magit drag-stuff gited yaml lsp-mode rust-mode exwm))
  '(size-indication-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
