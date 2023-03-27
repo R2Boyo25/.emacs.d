@@ -20,6 +20,8 @@
  '(display-time-24hr-format t)
  '(display-time-interval 30)
  '(display-time-mode t)
+ '(mml-secure-openpgp-encrypt-to-self t)
+ '(mml-secure-openpgp-sign-with-sender t)
  '(package-selected-packages
    '(company powerline typescript-mode gdscript-mode org-journal doom-themes eglot mmm-mode multiple-cursors compat magit drag-stuff gited yaml lsp-mode rust-mode exwm))
  '(size-indication-mode t))
