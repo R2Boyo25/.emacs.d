@@ -24,8 +24,9 @@
  '(mml-secure-openpgp-encrypt-to-self t)
  '(mml-secure-openpgp-sign-with-sender t)
  '(package-selected-packages
-   '(emmet-mode company powerline typescript-mode gdscript-mode org-journal doom-themes eglot mmm-mode multiple-cursors compat magit drag-stuff gited yaml lsp-mode rust-mode exwm))
- '(size-indication-mode t))
+   '(ox-rst emmet-mode company powerline typescript-mode gdscript-mode org-journal doom-themes eglot mmm-mode multiple-cursors compat magit drag-stuff gited yaml lsp-mode rust-mode exwm))
+ '(size-indication-mode t)
+ '(tab-width 4)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

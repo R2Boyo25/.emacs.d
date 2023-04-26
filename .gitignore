@@ -4,6 +4,9 @@
 !/init.el
 !/.xprofile.example
 
+!/codeium.el
+!/codeium.el/*
+
 !/config/*
 /config/*~
 !/config
