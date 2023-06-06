@@ -36,6 +36,8 @@
                        (start-process-shell-command command nil command)))
           ([s-iso-lefttab] . cycle-buffer-backward)
           ([s-tab] . cycle-buffer)
+          ;; Toggle 'char-mode' and 'line-mode'
+          ([?\s-z] . exwm-input-toggle-keyboard)
           ;; 's-N': Switch to certain workspace.
           ,@(mapcar (lambda (i)
                       `(,(kbd (format "s-%d" i)) .

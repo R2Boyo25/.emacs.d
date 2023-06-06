@@ -9,6 +9,7 @@
 
 !/config/*
 /config/*~
+/config/codeium.el
 !/config
 
 !/modules/*

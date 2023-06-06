@@ -11,3 +11,5 @@
           (lambda () (setq indent-tabs-mode nil)))
 
 (setq rust-format-on-save t)
+
+(setenv "CARGO_TARGET_DIR" "~/.cache/cargo-builds/")

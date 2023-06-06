@@ -20,3 +20,7 @@
 (require 'org-journal)
 
 (global-set-key (kbd "M-j") 'org-journal-new-entry)
+
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((python . t)))
