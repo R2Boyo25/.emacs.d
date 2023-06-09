@@ -29,3 +29,6 @@
 
 (add-to-list 'auto-mode-alist '("\\.mjs\\'" . js-mode))
 (setq dired-listing-switches "-alhD")
+
+;; Neotree
+(setq neo-smart-open t)

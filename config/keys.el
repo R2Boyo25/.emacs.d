@@ -6,3 +6,4 @@
 ;;;;
 
 (global-set-key (kbd "C-M-t") (lambda () (interactive) (call-process-shell-command "kitty &" nil 0)))
+(global-set-key [f8] 'neotree-toggle)
