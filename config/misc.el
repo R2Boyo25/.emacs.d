@@ -32,3 +32,25 @@
 
 ;; Neotree
 (setq neo-smart-open t)
+
+;(defun goto-first-reference () 
+;  (interactive)
+;  (eval 
+;   `(progn
+;      (goto-char (point-min))
+;      (search-forward-regexp
+;       (rx symbol-start ,(thing-at-point 'symbol) symbol-end))
+;      (beginning-of-thing 'symbol))))
+
+;(global-set-key (kbd "C-c g") 'goto-first-reference)
+
+(global-set-key (kbd "C-c g") 'dumb-jump-go)
+(global-set-key (kbd "C-c b") 'xref-go-back)
+
+(defun goto-references ()
+  (interactive)
+  (eval 
+   `(progn
+      (occur (rx symbol-start ,(thing-at-point 'symbol) symbol-end)))))
+
+(global-set-key (kbd "C-c G") 'goto-references)
