@@ -54,3 +54,10 @@
       (occur (rx symbol-start ,(thing-at-point 'symbol) symbol-end)))))
 
 (global-set-key (kbd "C-c G") 'goto-references)
+
+;; Load EAF
+(add-to-list 'load-path "~/.emacs.d/site-lisp/emacs-application-framework/")
+(require 'eaf)
+
+(require 'eaf-browser)
+(require 'eaf-pdf-viewer)

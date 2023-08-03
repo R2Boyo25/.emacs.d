@@ -1,3 +1,6 @@
 [submodule "codeium.el"]
 	path = codeium.el
 	url = https://github.com/Exafunction/codeium.el
+[submodule "site-lisp/emacs-application-framework"]
+	path = site-lisp/emacs-application-framework
+	url = https://github.com/emacs-eaf/emacs-application-framework

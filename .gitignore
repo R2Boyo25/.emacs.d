@@ -16,4 +16,7 @@
 /modules/*~
 !/modules
 
+!/site-lisp
+!/site-lisp/*
+
 !.gitignore
