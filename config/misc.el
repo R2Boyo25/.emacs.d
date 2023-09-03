@@ -28,6 +28,7 @@
 (show-paren-mode 1)
 
 (add-to-list 'auto-mode-alist '("\\.mjs\\'" . js-mode))
+(add-to-list 'auto-mode-alist '("\\.star\\'" . python-mode))
 (setq dired-listing-switches "-alhD")
 
 ;; Neotree
@@ -56,8 +57,10 @@
 (global-set-key (kbd "C-c G") 'goto-references)
 
 ;; Load EAF
-(add-to-list 'load-path "~/.emacs.d/site-lisp/emacs-application-framework/")
-(require 'eaf)
+;(add-to-list 'load-path "~/.emacs.d/site-lisp/emacs-application-framework/")
+;(require 'eaf)
 
-(require 'eaf-browser)
-(require 'eaf-pdf-viewer)
+;(require 'eaf-browser)
+;(require 'eaf-pdf-viewer)
+
+;(type-break-mode)

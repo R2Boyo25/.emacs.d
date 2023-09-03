@@ -24,10 +24,13 @@
  '(ispell-dictionary nil)
  '(mml-secure-openpgp-encrypt-to-self t)
  '(mml-secure-openpgp-sign-with-sender t)
+ '(org-agenda-files
+   '("/share/notes/TODO.org" "/share/notes/journal/20230305" "/share/notes/journal/20230402" "/share/notes/journal/20230407" "/share/notes/journal/20230604" "/share/notes/journal/20230820" "/share/notes/journal/20230821"))
  '(package-selected-packages
-   '(string-inflection dumb-jump neotree projectile ox-rst emmet-mode company powerline typescript-mode gdscript-mode org-journal doom-themes eglot mmm-mode multiple-cursors compat magit drag-stuff gited yaml lsp-mode rust-mode exwm))
+   '(protobuf-mode ligature evil vlf elixir-mode string-inflection dumb-jump neotree projectile ox-rst emmet-mode company powerline typescript-mode gdscript-mode org-journal doom-themes eglot mmm-mode multiple-cursors compat magit drag-stuff gited yaml lsp-mode rust-mode exwm))
  '(size-indication-mode t)
- '(tab-width 4))
+ '(tab-width 4)
+ '(vlf-batch-size 100000))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

@@ -5,6 +5,9 @@
 ;;;; Generic keybindings.
 ;;;;
 
+;(require 'evil)
+;(evil-mode -1)
+
 (global-set-key [f8]          'neotree-toggle)
 (global-set-key (kbd "C-c c") 'projectile-compile-project)
 

@@ -12,4 +12,4 @@
 
 (setq rust-format-on-save t)
 
-(setenv "CARGO_TARGET_DIR" "~/.cache/cargo-builds/")
+(setenv "CARGO_TARGET_DIR" "/home/kazani/.cache/cargo-builds/")

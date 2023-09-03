@@ -5,7 +5,7 @@
 ;;;; Configuration or journaling with org-journal and org-agenda.
 ;;;;
 
-(setq org-dir "~/Org/")
+(setq org-dir "/share/notes/")
 (setq org-journal-dir (concat org-dir "journal/"))
 (setq org-agenda-files ())
 (add-to-list 'org-agenda-files org-journal-dir)
