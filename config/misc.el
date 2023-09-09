@@ -64,3 +64,14 @@
 ;(require 'eaf-pdf-viewer)
 
 ;(type-break-mode)
+
+(setq eww-download-directory "/share/documents/downloads")
+
+;; Fancy autocomplete menus
+(ivy-mode 1)
+
+(require 'gnus-notify)
+
+;; Refresh email
+(gnus-demon-add-handler 'gnus-group-get-new-news 5 t)
+(gnus-demon-init)

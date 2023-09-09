@@ -7,8 +7,11 @@
 
 (setq org-dir "/share/notes/")
 (setq org-journal-dir (concat org-dir "journal/"))
-(setq org-agenda-files ())
-(add-to-list 'org-agenda-files org-journal-dir)
+
+(setq org-agenda-files (append
+                        (directory-files-recursively org-dir "\\.org$")
+                        (cons org-journal-dir '())))
+
 (setq diary-file (concat org-dir "diary"))
 (setq org-agenda-file-regexp "[^.].*\\.org\\|[0-9]+$")
 

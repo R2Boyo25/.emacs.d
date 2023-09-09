@@ -27,7 +27,7 @@
  '(org-agenda-files
    '("/share/notes/TODO.org" "/share/notes/journal/20230305" "/share/notes/journal/20230402" "/share/notes/journal/20230407" "/share/notes/journal/20230604" "/share/notes/journal/20230820" "/share/notes/journal/20230821"))
  '(package-selected-packages
-   '(protobuf-mode ligature evil vlf elixir-mode string-inflection dumb-jump neotree projectile ox-rst emmet-mode company powerline typescript-mode gdscript-mode org-journal doom-themes eglot mmm-mode multiple-cursors compat magit drag-stuff gited yaml lsp-mode rust-mode exwm))
+   '(diminish ivy nerd-icons dashboard protobuf-mode ligature evil vlf elixir-mode string-inflection dumb-jump neotree projectile ox-rst emmet-mode company powerline typescript-mode gdscript-mode org-journal doom-themes eglot mmm-mode multiple-cursors compat magit drag-stuff gited yaml lsp-mode rust-mode exwm))
  '(size-indication-mode t)
  '(tab-width 4)
  '(vlf-batch-size 100000))

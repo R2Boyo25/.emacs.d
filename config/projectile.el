@@ -22,3 +22,6 @@
       (message "Could not find git project root."))))
 
 (global-set-key [f8] 'neotree-project-dir)
+
+(setq projectile-project-search-path '("~" ("/share/projects" . 3)))
+(setq projectile-completion-system 'ivy)

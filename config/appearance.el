@@ -47,3 +47,8 @@
                                        "<==" "<===" "<=" "=>" "=>>" "==>" "===>" ">=" "<=>" "<==>" "<===>" "<====>" "<!---"
                                        "<~~" "<~" "~>" "~~>" "::" ":::" "==" "!=" "===" "!=="
                                        ":=" ":-" ":+" "<*" "<*>" "*>" "<|" "<|>" "|>" "+:" "-:" "=:" "<******>" "++" "+++"))
+
+;; Hide things from the mode list that are always enabled
+(diminish 'ivy-mode)
+(diminish 'company-mode)
+(diminish 'drag-stuff-mode)
